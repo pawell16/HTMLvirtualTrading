@@ -10,4 +10,5 @@ Buy - ArrowUP
 Sell - ArrowDown
 Close Positions - ArrowRight
 Next Day - N
-There is also a python file for downloading other market data.
+# getData.py
+This python file is for downloading other market data.
