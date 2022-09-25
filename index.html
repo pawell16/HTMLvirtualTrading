@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <style>
+            h1{
+                margin:0;
+                margin-bottom:5;
+            }
+            .mainButtonCell{
+                width:10%;
+            }
+            .mainButton{
+                width:100%;
+                height:100%;
+                color:#FFFFFF;
+                font-size:200%;
+                border-width: 0;
+                border-radius:12px;
+            }
+            body{
+                margin:0.5%;
+                overflow:hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <table style="width:98%;height:5%;margin:0 1%"><tr>
+                <td style="width:32%"><h1 id="chartInfo">Trading simulator</h1></td>
+                <td style="width:34%"><h1 id="cash" style="text-align:center">10000 USD</h1></td>
+                <td style="width:32%"><h1 id="dayCounter" style="text-align:right">day 1</h1></td>
+        </tr></table>
+        <canvas id="cam" width="1000" height="400" style="width:100%;height:85%;background-color: #F0F0F0">
+            <canvas id="chart" width="4000" height="3200"></canvas>
+        </canvas>
+        <table style="width:100%;height:9%"><tr>
+            <td style="width:15%"><button onclick="resetBalance();this.blur()" class="mainButton" style="background-color:#8876a7;">reset balance</button></td>
+            <td style="width:20%"></td>
+            <td class="mainButtonCell"><button id="buy" onclick="buy();this.blur()" class="mainButton" style="background-color:#49c760;">buy</button></td>
+            <td class="mainButtonCell"><button id="sell" onclick="sell();this.blur()" class="mainButton" style="background-color:#f14646;">sell</button></td>
+            <td class="mainButtonCell"><button onclick="inCash();this.blur()" class="mainButton" style="background-color:#fdc73d;">close</button></td>
+            <td style="width:20%"></td>
+            <td style="width:15%"><button onclick="nextDay();this.blur()" class="mainButton" style="background-color:#7da1b0;">next day</button></td>
+        </tr></table>
+        <script src='data.js'></script>
+        <script src='main.js'></script>
+    </body>
+</html>
+
+
+
