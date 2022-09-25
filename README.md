@@ -9,6 +9,6 @@ Reset Balance - R\
 Buy - ArrowUP\
 Sell - ArrowDown\
 Close Positions - ArrowRight\
-Next Day - N\
+Next Day - N
 # getData.py
 This python file is for downloading other market data.
